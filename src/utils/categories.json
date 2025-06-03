@@ -1,0 +1,99 @@
+{
+  "categories": [
+    {
+      "name": "Clothing, Shoes & Accessories",
+      "subcategories": [
+        "Women’s",
+        "Men’s",
+        "Young Adult",
+        "Kids’",
+        "Toddler",
+        "Baby"
+      ]
+    },
+    {
+      "name": "Home & Patio",
+      "subcategories": [
+        "Home",
+        "Outdoor Living & Garden",
+        "Kitchen & Dining",
+        "Storage & Organization",
+        "Furniture",
+        "Bath"
+      ]
+    },
+    {
+      "name": "Baby",
+      "subcategories": [
+        "Car Seats",
+        "Strollers",
+        "Diapering",
+        "Nursery",
+        "Gear & Activity"
+      ]
+    },
+    {
+      "name": "Electronics",
+      "subcategories": [
+        "Video Games",
+        "TV & Home Theater",
+        "Cell Phones",
+        "Wearable Tech",
+        "Computers & Office",
+        "Wi-Fi & Networking",
+        "Smart Home",
+        "Tablets & E-readers",
+        "Headphones",
+        "Speakers & Audio Systems",
+        "Cameras & Camcorders",
+        "Kids’ Electronics",
+        "Pre-owned & Refurbished Electronics"
+      ]
+    },
+    {
+      "name": "School & Office",
+      "subcategories": [
+        "Desk Organization",
+        "Ready for School",
+        "All College",
+        "At-Home Learning",
+        "Home Office Solutions"
+      ]
+    },
+    {
+      "name": "Toys",
+      "subcategories": [
+        "Character Shop",
+        "Kids’ Play",
+        "Stuffed Animals",
+        "Dolls & Dollhouses",
+        "Outdoor Toys"
+      ]
+    },
+    {
+      "name": "Sports, Fitness & Outdoors",
+      "subcategories": [
+        "Exercise & Fitness",
+        "Sports Equipment",
+        "Pools & Accessories",
+        "Bikes",
+        "Camping Gear"
+      ]
+    },
+    {
+      "name": "Entertainment",
+      "subcategories": ["Movies", "TV Shows", "Music", "Books"]
+    },
+    {
+      "name": "Beauty & Personal Care",
+      "subcategories": [
+        "Ulta Beauty at Target",
+        "Beauty",
+        "Personal Care",
+        "Makeup",
+        "Hair Care",
+        "Skincare"
+      ]
+    }
+  ]
+}
