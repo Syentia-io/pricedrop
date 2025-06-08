@@ -26,7 +26,7 @@ const ProductPage: React.FC = () => {
       name: detail?.title ?? "",
       productImg: detail?.imageUrl,
       price: Number(detail?.price),
-      quantity: 1,
+      quantity: "1",
     });
   };
   // mt-33
@@ -42,23 +42,23 @@ const ProductPage: React.FC = () => {
             {/* Thumbnails */}
             <div className="col-span-12 lg:col-span-1 flex lg:flex-col items-start space-x-2 lg:space-x-0 lg:space-y-2">
               <img
-                src={detail?.imageUrl}
+                src={detail?.imageUrl ?? ""}
                 alt="Thumbnail 1"
                 className="w-12 h-12 md:w-16 md:h-16 object-contain border rounded cursor-pointer hover:border-blue-500 border-blue-500"
               />
               <img
-                src={detail?.imageUrl}
+                src={detail?.imageUrl ?? ""}
                 alt="Thumbnail 2"
                 className="w-12 h-12 md:w-16 md:h-16 object-contain border rounded cursor-pointer hover:border-blue-500"
               />
               <img
-                src={detail?.imageUrl}
+                src={detail?.imageUrl ?? ""}
                 alt="Thumbnail 3"
                 className="w-12 h-12 md:w-16 md:h-16 object-contain border rounded cursor-pointer hover:border-blue-500"
               />
 
               <img
-                src={detail?.imageUrl}
+                src={detail?.imageUrl ?? ""}
                 alt="Thumbnail 5"
                 className="w-12 h-12 md:w-16 md:h-16 object-contain border rounded cursor-pointer hover:border-blue-500"
               />
@@ -67,7 +67,7 @@ const ProductPage: React.FC = () => {
             {/* Main Image */}
             <div className="col-span-12 lg:col-span-5 relative">
               <img
-                src={detail?.imageUrl}
+                src={detail?.imageUrl ?? ""}
                 alt="Bronner Brothers Wrapping Lotion Foam"
                 className="w-auto h-auto max-h-[500px] mx-auto object-contain"
               />
@@ -300,7 +300,7 @@ const ProductPage: React.FC = () => {
 
                 <div>
                   <h3 className="text-md font-semibold mb-2">
-                    How you'll get this item:
+                    {"How you'll get this item:"}
                   </h3>
                   <label className="flex items-center space-x-2 text-sm mb-3 cursor-pointer">
                     <input

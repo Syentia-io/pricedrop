@@ -5,24 +5,24 @@ interface Product {
   product: number;
   name: string;
   price: number;
-  quantity: any;
-  productImg?: any;
+  quantity: string;
+  productImg?: string;
   stock?: number;
 }
 
 interface Update {
   product: number;
-  quantity: any;
+  quantity: string;
 }
 
 type Store = {
   cart: Product[];
   loading: boolean;
   addToCart: (product: Product) => void;
-  buyNow: (product: Product, navigate?: any) => void;
+  buyNow: (product: Product) => void;
   updateQuantity: (product: Update) => void;
-  cancelOrder: (args?: any) => void;
-  clearOrder: (args?: any, args2?: any) => void;
+  cancelOrder: () => void;
+  clearOrder: () => void;
   removeItem: (args: { productId: number }) => void;
 };
 
@@ -32,10 +32,10 @@ export const useCart = create<Store>()(
       (set, get): Store => ({
         cart: [],
         loading: false,
-        cancelOrder: (navigate) => {
+        cancelOrder: () => {
           set({ cart: [] });
 
-          navigate(`/products`);
+          // navigate(`/products`);
         },
         removeItem: ({ productId }) => {
           const remove = get().cart.filter(
@@ -43,8 +43,8 @@ export const useCart = create<Store>()(
           );
           set({ cart: remove });
         },
-        clearOrder: (navigate, id) => {
-          navigate(`/products`);
+        clearOrder: () => {
+          // navigate(`/products`);
 
           set({ cart: [] });
         },
@@ -92,7 +92,7 @@ export const useCart = create<Store>()(
             }
           });
         },
-        buyNow: (product, navigate) => {
+        buyNow: (product) => {
           set((state) => {
             const existingCartItem = state.cart.find(
               (item) => item.product === product.product
@@ -106,8 +106,6 @@ export const useCart = create<Store>()(
 
               return { cart: updatedcart };
             } else {
-              navigate("/check-out");
-
               return {
                 cart: [
                   ...state.cart,

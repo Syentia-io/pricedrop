@@ -1,10 +1,10 @@
 import { useCart } from "@/store/useCart";
 import { calculateTotalPrice } from "@/utils/calculateTotalPrice";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 export const Header = () => {
-  const route = useRouter();
+  // const route = useRouter();
   const { cart } = useCart((state) => state);
 
   const total = calculateTotalPrice(cart);

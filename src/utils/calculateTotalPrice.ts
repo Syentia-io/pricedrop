@@ -2,8 +2,8 @@ interface Product {
   product: number;
   name: string;
   price: number;
-  quantity: any;
-  productImg?: any;
+  quantity: string;
+  productImg?: string;
   stock?: number;
 }
 

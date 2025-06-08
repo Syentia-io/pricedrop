@@ -9,20 +9,20 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Home() {
-  const handleAddToCart = (productId: number | string) => {
-    console.log(`Parent: Add to cart requested for product ID: ${productId}`);
-    // Add to cart logic here (e.g., update state, API call)
-  };
+  // const handleAddToCart = (productId: number | string) => {
+  //   console.log(`Parent: Add to cart requested for product ID: ${productId}`);
+  //   // Add to cart logic here (e.g., update state, API call)
+  // };
 
-  const handleShowOptions = (productId: number | string) => {
-    console.log(`Parent: Show options requested for product ID: ${productId}`);
-    // Logic to display a modal or navigate to product page
-  };
+  // const handleShowOptions = (productId: number | string) => {
+  //   console.log(`Parent: Show options requested for product ID: ${productId}`);
+  //   // Logic to display a modal or navigate to product page
+  // };
 
-  const handleToggleWishlist = (productId: number | string) => {
-    console.log(`Parent: Toggle wishlist for product ID: ${productId}`);
-    // Update wishlist state
-  };
+  // const handleToggleWishlist = (productId: number | string) => {
+  //   console.log(`Parent: Toggle wishlist for product ID: ${productId}`);
+  //   // Update wishlist state
+  // };
 
   const pathname = usePathname();
 

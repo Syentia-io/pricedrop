@@ -1,6 +1,7 @@
 import React from "react";
 import { Product } from "../type";
 import { useRouter } from "next/navigation";
+// import Image from "next/image";
 // import { Heart } from 'lucide-react';
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
